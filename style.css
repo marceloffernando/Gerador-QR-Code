@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+}
+#container{
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+h1{
+    color: red;
+}
