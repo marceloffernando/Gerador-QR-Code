@@ -1,14 +1,20 @@
 
-const container =document.querySelector(".container")
-const qrCodeBtn = document.querySelector(".qr-form button")
+const container = document.querySelector(".container");
+const qrCodeBtn = document.querySelector(".btn");
 
-const qrCodeInput = document.querySelector(".qr-form input")
+const qrCodeInput = document.querySelector(".qr-form input");
 
-// EVENTOS
-function gerarQrCode(){
-    console.log()
+//EVENTOS
+function gerarQrCode() {
+    const qrCodeInputValue = qrCodeInput.value;
+    
+    if (!qrCodeInputValue) return;
+    
+    qrCodeBtn.innerHTML = "gerando...";
 }
-
-qrCodeBtn.addEventListener("click", () => {
+qrCodeBtn.addEventListener("click", () =>{
     gerarQrCode();
-  });
+});
+
+ 
+
